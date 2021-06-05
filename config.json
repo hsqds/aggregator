@@ -1,0 +1,47 @@
+{
+    "feeds": [
+        {
+            "url": "https://blog.golang.org",
+            "rules": {
+                "postPath": "/feed/entry",
+                "titlePath": "title",
+                "linkPath": "link@href",
+                "descriptionPath": "summary"
+            }
+        },
+        {
+            "url": "https://yandex.ru/company/press_releases/news.rss",
+            "rules": {
+                "postPath": "/rss/channel/item",
+                "titlePath": "title",
+                "linkPath": "link",
+                "descriptionPath": "description"
+            }
+        },
+        {
+            "url": "https://dave.cheney.net",
+            "rules": {
+                "postPath": "/rss/channel/item",
+                "titlePath": "title",
+                "linkPath": "link",
+                "descriptionPath": "description"
+            }
+        },
+        {
+            "url": "https://eng.uber.com",
+            "rules": {
+                "postPath": "/rss/channel/item",
+                "titlePath": "title",
+                "linkPath": "link",
+                "descriptionPath": "description"
+            }
+        }
+    ],
+    "db": {
+        "host": "localhost",
+        "port": "5432",
+        "username": "postgres",
+        "password": "pass",
+        "dbname": "rss-reader"
+    }
+}
